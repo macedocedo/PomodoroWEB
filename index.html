@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="timer">
+    <h1 id="timerDisplay">00:00</h1>
+    <div class="options">
+      <button onclick="startTimer(30 * 60)">30 Minutos</button>
+      <button onclick="startTimer(15 * 60)">15 Minutos</button>
+      <button onclick="startTimer(5 * 60)">5 Minutos</button>
+    </div>
+    <button id="startButton" onclick="startTimer(30 * 60)">Start</button>
+    <button id="resetButton" onclick="resetTimer()">Reset</button>
+  </div>
+  
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <input type="text" id="novaTarefa" placeholder="Digite uma nova tarefa">
+    <button id="adicionarTarefa">Adicionar Tarefa</button>
+    <ul id="listaTarefas">
+        <!-- As tarefas adicionadas serão exibidas aqui -->
+    </ul>
+</div>
+
+<audio id="alarmSound" src="alarm.mp3"></audio>
+  
+</div>
+  <div class="container" id="container"></div>
+  <button id="adicionarBloco">Adicionar Bloco</button>
+  <div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
