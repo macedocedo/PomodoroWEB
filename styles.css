@@ -46,7 +46,7 @@ button {
   
   .bloco {
     width: 200px; /* largura máxima do bloco */
-    height: 150px; /* altura máxima do bloco */
+    height: 100px; /* altura máxima do bloco */
     background-color: rgb(156, 156, 156);
     position: absolute;
     border-radius: 20px;
@@ -55,4 +55,23 @@ button {
     overflow: hidden; /* esconde qualquer conteúdo que ultrapasse os limites do bloco */
     white-space: nowrap; /* evita que o texto seja quebrado em várias linhas */
     text-overflow: ellipsis; /* adiciona reticências (...) para indicar que o texto foi truncado */
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.concluida {
+  text-decoration: line-through;
 }

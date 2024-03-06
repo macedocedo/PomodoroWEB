@@ -156,8 +156,6 @@ document.getElementById("playAlarm").addEventListener("click", function() {
 });
 
 
-
-
 // Reproduz o som do ding
 function playDing() {
   const dingSound = document.getElementById('ding');
